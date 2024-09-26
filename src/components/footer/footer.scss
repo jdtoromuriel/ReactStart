@@ -1,0 +1,7 @@
+@import "../../styles/utils.scss";
+footer {
+    padding: pxToRem(16px) pxToRem(32px);
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
