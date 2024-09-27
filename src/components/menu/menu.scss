@@ -1,0 +1,102 @@
+@import "../../scss/_breakpoints";
+@import "../../scss/utils.scss";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: pxToRem(16px) pxToRem(32px);
+  background-color: #333;
+  color: #fff;
+
+  &__logo h1 {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  &-buscar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    input {
+      padding: pxToRem(8px) pxToRem(30px);
+      border-radius: pxToRem(5px);
+      border: none;
+    }
+
+    svg{
+      position: absolute;
+      left: pxToRem(10px);
+      color: BLACK;
+    }
+
+  }
+  &__menu {
+    display: flex;
+    gap: 2rem;
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+
+      li {
+        a {
+          color: #fff;
+          text-decoration: none;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: #ddd;
+          }
+        }
+      }
+    }
+
+    // Ocultar el menú en pantallas pequeñas
+    @media ($breakpoint-md-down) {
+      display: none;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      flex-direction: column;
+      text-align: center;
+    
+      ul {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0;
+
+        li {
+          margin: 0;
+        }
+      }
+
+      &--open {
+        display: flex;
+      }
+    }
+  }
+
+  // Ícono del menú en pantallas pequeñas
+  &__toggle {
+    display: none;
+
+    @media ($breakpoint-md-down) {
+      display: block;
+      cursor: pointer;
+      font-size: 2rem;
+      color: #fff;
+    }
+  }
+
+  // Desaparecer el ícono en pantallas grandes
+  @media ($breakpoint-md) {
+    .navbar__toggle {
+      display: none;
+    }
+  }
+}

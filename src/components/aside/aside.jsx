@@ -1,4 +1,4 @@
-import './sidebar.scss'
+import './aside.scss'
 const sidebar = () => {
   return (
     <div className="sidebar">

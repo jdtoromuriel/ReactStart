@@ -1,12 +1,15 @@
-import Header from "../components/header/header"
-import Sidebar from "../components/sidebar/sidebar"
+
+import Sidebar from "../components/aside/aside"
 import MainContent from "../components/main/main"
 import Footer from "../components/footer/footer"
+import Menu from "../components/menu/menu"
+import Header from "../components/header/header"
 
 const Home = () => {
   return (
     <>
     <Header/>
+    <Menu/>
     <div className="Home">
       <div className="Home-Main">
         <div className="sidebar">
