@@ -1,0 +1,26 @@
+[
+    {
+        "titulo": "Arroz con pollo",
+        "descripcion": "asodasjaspdjasdjksadsadas",
+        "img": "https://www.elsabor.com.ec/wp-content/uploads/2022/02/arroz-pollo.jpg",
+        "fecha": "09-09-2024"
+    },
+    {
+        "titulo": "Sancocho",
+        "descripcion": "asodasjaspdjasdjksadsadas",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV_pI879tqgunIibQQYLgv9WTrHKPwoXVltw&s",
+        "fecha": "20-09-2024"
+    },
+    {
+        "titulo": "Pizza",
+        "descripcion": "asodasjaspdjasdjksadsadas",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI2hdQeNVlyu20ReOpJcNwdgW0ER5hwxnauQ&s",
+        "fecha": "02-08-2024"
+    },
+    {
+        "titulo": "Arroz con Leche",
+        "descripcion": "asodasjaspdjasdjksadsadas",
+        "img": "https://peopleenespanol.com/thmb/O4bAeAl5OXtRrGPmtCsHh4UpzDM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/recetas-1092-arroz-con-leche-2000-ac1485846508488e8da95f5f9c8de793.jpg",
+        "fecha": "21-09-2024"
+    }
+]

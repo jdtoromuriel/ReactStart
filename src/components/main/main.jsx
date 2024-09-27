@@ -1,21 +1,16 @@
-import './main.scss';
+import Article from './article';
+import datosReceta from '../../assets/infoRecetas.json';
 
-const main = () => {
+const Main = () => {
   return (
     <div className="main-content">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2020</h5>
-      <div className="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit...</p>
-
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2020</h5>
-      <div className="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit...</p>
+      {
+        datosReceta.map((receta, i) => (
+          <Article receta={receta} key={i} />
+        ))
+      }
     </div>
-  )
+  );
 }
 
-export default main
+export default Main;

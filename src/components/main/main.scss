@@ -1,9 +1,10 @@
 @import "../../scss/utils.scss";
-.main-content {
-  padding: pxToRem(16px);
+.receta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  .fakeimg {
-    background-color: #aaa;
+  img {
     width: 100%;
     padding: pxToRem(100px) pxToRem(80px);
     margin-bottom: pxToRem(16px);
@@ -11,10 +12,18 @@
   }
 
   h2 {
-    margin-top: pxToRem(16px);
+    text-align: center;
+  }
+  h5{
+    text-align: center;
+  }
+  p {
+    text-align: center;
   }
 
-  p {
-    margin-bottom: pxToRem(16px);
+  button{
+    background-color: rgb(55, 125, 206);
+    padding: 16px;
+
   }
 }

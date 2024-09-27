@@ -8,7 +8,7 @@ let infoHeader = {
 }
 const header = () => {
   return (
-    <header class="header">
+    <header className="header">
         <h1 className='header-h1'><img src={logo} alt="logo" className='header-logo' /> {infoHeader.titulo}</h1>
         <p>{infoHeader.descripcion}</p> 
     </header>
